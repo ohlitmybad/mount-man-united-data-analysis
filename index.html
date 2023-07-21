@@ -1,6 +1,8 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+		<meta name="viewport" content="initial-scale=0.7, maximum-scale=0.7">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 
@@ -68,6 +70,7 @@ footer a,
   color: black;
 }
 
+
 .logo img {
   width: 50px;
   height: 50px;
@@ -75,9 +78,32 @@ footer a,
 
 
 .container10 {
-  width: 980px;
+  width: 71.4%;
   margin: 0 auto;
 }
+
+
+
+/* Media query for mobile devices with a maximum screen width of 768px */
+@media screen and (max-width: 768px) {
+  .container10 {
+    width: 96%; /* Change the width to 90% for mobile devices */
+  }
+}
+
+.articles-list img {
+  width: 100%; /* Set the width to 100% of its parent container's width */
+  height: 200px; /* Set a fixed height for non-mobile devices */
+}
+
+/* Media query for mobile devices with a maximum screen width of 768px */
+@media screen and (max-width: 768px) {
+  .articles-list img {
+	  width: 122px;
+    height: 80px; /* Set height to auto for mobile devices */
+  }
+}
+
 
 
 
@@ -87,6 +113,8 @@ footer a,
   align-items: flex-start; /* Align items at the top */
   flex-wrap: wrap; /* Add flex-wrap property to wrap the content on smaller screens */
 }
+
+
 
 .google-play-container {
   display: flex;
@@ -306,15 +334,23 @@ header a {
   margin-top: 20px;
 }
 
+
+
 .share-buttons a {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  margin: 5px;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 16px;
+  width: 22%; /* Set the width of each link to 25% of the parent container's width */
+  padding: 10px; /* Add padding to provide some spacing between links */
+  font-size: 1em; /* Use relative font size for better responsiveness */
+  text-align: center; /* Center the text inside the links */
+  text-decoration: none; /* Remove underlines from the links */
+  color: #fff; /* Set the color of the link text */
+}
+
+/* Media query for adjusting link size on smaller screens */
+@media screen and (max-width: 768px) {
+  .share-buttons a {
+    width: 40%; /* Change the width to 40% for smaller screens */
+    font-size: 0.6em; /* Decrease font size for smaller screens */
+  }
 }
 
 .share-buttons a i {
@@ -343,7 +379,15 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
+max-width: 100%; /* Set the maximum width to 100% of its parent container's width */
+  margin: 0 auto;
 }
+
+.image-container img {
+  width: 100%; /* Set the width of the image to 100% of its parent container's width */
+  height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+}
+
 
 .image-credit {
   position: absolute;
@@ -469,7 +513,7 @@ header a {
   </div>
 
 <div class="image-container">
-  <img src="https://pbs.twimg.com/media/F1lJvRhX0AAlvAr?format=png&name=900x900" alt="Mason Mount at Old Trafford" width="815" height="536">
+  <img src="https://pbs.twimg.com/media/F1lJvRhX0AAlvAr?format=png&name=900x900" alt="Mason Mount at Old Trafford">
   <a href="https://twitter.com/ManUtd" target="_blank" class="image-credit">@ManUtd</a>
 </div>
 
@@ -502,7 +546,7 @@ Before diving into the player, let's take a look at his future partners in crime
 
 
 <div class="image-container">
-  <img src="https://pbs.twimg.com/media/F1hRn8KXsAAxtv2?format=png&name=900x900" alt="Casemiro vs Bruno Fernandes stats radar chart data comparison" width="681" height="605">
+  <img src="https://pbs.twimg.com/media/F1hRn8KXsAAxtv2?format=png&name=900x900" alt="Casemiro vs Bruno Fernandes stats radar chart data comparison">
   <a href="https://datamb.football/midfielders" target="_blank" class="image-credit">Compare midfielders</a>
 
 </div>
@@ -519,7 +563,7 @@ The third player in that midfield three will need to have great retention, great
 
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/F1hSc15WwAEBj9W?format=png&name=900x900
-" alt="Mason Mount stats radar chart data comparison" width="698" height="605">
+" alt="Mason Mount stats radar chart data comparison">
   <a href="https://datamb.football/midfielders" target="_blank" class="image-credit">Compare midfielders</a>
 </div>
 <br/>
@@ -544,7 +588,7 @@ Praised by many at Chelsea for his disciplined nature and willingness to defend,
 
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/Fz0VfWlX0AUs3oq?format=jpg&name=medium
-" alt="Plot comparison data Manchester United midfielders" width="920" height="605">
+" alt="Plot comparison data Manchester United midfielders" >
   <a href="https://datamb.football/plotcm" target="_blank" class="image-credit">Plot midfielders</a>
 </div>
 
@@ -561,7 +605,7 @@ To illustrate those two points, let's compare him to Eriksen : he has a slightly
 
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/F1hbqYTWAAYiySz?format=png&name=900x900
-" alt="Mount vs Eriksen stats radar chart data compariso" width="692" height="605">
+" alt="Mount vs Eriksen stats radar chart data comparison">
   <a href="https://datamb.football/midfielders" target="_blank" class="image-credit">Compare midfielders</a>
 </div>
 
@@ -572,7 +616,7 @@ Showcasing this tendency again, Mount is one of the best in the Premier League a
 <br/>
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/Fz0X_grXgAAAuzw?format=jpg&name=medium
-" alt="Plot comparison data Premier League midfielders" width="920" height="605">
+" alt="Plot comparison data Premier League midfielders">
   <a href="https://datamb.football/plotcm" target="_blank" class="image-credit">Plot midfielders</a>
 </div>
 
@@ -590,7 +634,7 @@ In an off season where he played higher up the pitch (meaning less space to prog
 <br/>
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/Fz0ZRAMXwAAEtKH?format=jpg&name=medium
-" alt="Plot comparison data Manchester United midfielders" width="920" height="605">
+" alt="Plot comparison data Manchester United midfielders">
   <a href="https://datamb.football/plotcm" target="_blank" class="image-credit">Plot midfielders</a>
 </div>
 
@@ -605,7 +649,7 @@ He might not be at the level of Bruno, de Bruyne or even Ødegaard, but Mount is
 <br/>
 <div class="image-container">
   <img src="https://pbs.twimg.com/media/Fz0b5JzWYAIOQ6H?format=jpg&name=medium
-" alt="Plot comparison data Premier League midfielders" width="920" height="605">
+" alt="Plot comparison data Premier League midfielders">
   <a href="https://datamb.football/plotcm" target="_blank" class="image-credit">Plot midfielders</a>
 </div>
 
@@ -639,18 +683,18 @@ He might not be at the level of Bruno, de Bruyne or even Ødegaard, but Mount is
   <ul class="articles-list">
     <li>
       <a href="http://datamb.football/ohlitmybad1">
-        <img src="https://i.imgur.com/dWcye1W.png" alt="Articles by ohlitmybad" width="292" height="160">         <span class="article-title">Articles by ohlitmybad</span>
+        <img src="https://i.imgur.com/dWcye1W.png" alt="ohlitmybad">         <span class="article-title">ohlitmybad</span>
 
       </a> 
     </li>
     <li>
       <a href="http://datamb.football/midfielders">
-        <img src="https://i.imgur.com/p43wTxg.png" alt="Compare midfielders" width="292" height="160"><span class="article-title">Compare midfielders</span>
+        <img src="https://i.imgur.com/p43wTxg.png" alt="Compare midfielders"><span class="article-title">Compare midfielders</span>
       </a>
     </li>
     <li>
       <a href="http://datamb.football/onana-man-united-stretford-trends">
-        <img src="https://i.imgur.com/k1PzrCL.png" alt="André Onana : Analysis" width="270" height="160"><span class="article-title">André Onana : Analysis</span>
+        <img src="https://i.imgur.com/k1PzrCL.png" alt="André Onana : Analysis"><span class="article-title">André Onana : Analysis</span>
       </a>
     </li>
   </ul>
